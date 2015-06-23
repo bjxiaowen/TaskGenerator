@@ -1,9 +1,9 @@
-package com.bp3.SpringPersonsExample.model;
+package com.bp3.TaskGenerator.model;
 
 /**
  * Created by afahsl on 6/8/15.
  */
-public class Person {
+public class Task {
 
     private String description;
     private String name;

@@ -1,4 +1,4 @@
-package com.bp3.SpringPersonsExample;
+package com.bp3.TaskGenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
