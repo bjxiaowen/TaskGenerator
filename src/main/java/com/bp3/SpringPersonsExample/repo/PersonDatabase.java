@@ -1,6 +1,6 @@
-package com.bp3.TaskGenerator.repo;
+package com.bp3.SpringPersonsExample.repo;
 
-import com.bp3.TaskGenerator.model.Task;
+import com.bp3.SpringPersonsExample.model.Person;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
@@ -14,27 +14,26 @@ import java.util.List;
 import java.util.Map;
 
 @Repository
-public class TaskDatabase {
+public class PersonDatabase {
 
-    Map<Long, Task> taskDatabase;
+    Map<String, Person> personDatabase;
 
-    public TaskDatabase() {
+    public PersonDatabase() {
     }
 
     @PostConstruct
     private void populateDatabase() {
         ObjectMapper mapper = new ObjectMapper();
-        File file = new File("src/main/resources/taskList.json");
+        File file = new File("./src/main/resources/tasklist.json");
         try {
-            taskDatabase = mapper.readValue(file, new TypeReference<HashMap<Long, Task>>() {});
+            personDatabase = mapper.readValue(file, new TypeReference<HashMap<String, Person>>() {});
         } catch (IOException e) {
-            System.out.println("ERROR:");
             e.printStackTrace();
         }
     }
 
 
-    public List<Task> getAllTasks(){
-        return new ArrayList<>(taskDatabase.values());
+    public Map<String, Person> getAllTasks() {
+        return personDatabase;
     }
 }

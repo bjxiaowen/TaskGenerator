@@ -1,15 +1,15 @@
-package com.bp3.TaskGenerator.model;
+package com.bp3.SpringPersonsExample.model;
 
 /**
  * Created by afahsl on 6/8/15.
  */
-public class Task {
+public class Person {
 
     private String description;
     private String name;
     private Long process_id;
     private Long instance;
-    private Long task_id;
+    private String task_id;
 
     public String getDescription() {
         return description;
@@ -43,11 +43,11 @@ public class Task {
         this.instance = instance;
     }
 
-    public Long getTask_id() {
+    public String getTask_id() {
         return task_id;
     }
 
-    public void setTask_id(Long task_id) {
+    public void setTask_id(String task_id) {
         this.task_id = task_id;
     }
 }
