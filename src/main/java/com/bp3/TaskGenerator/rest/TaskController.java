@@ -21,4 +21,21 @@ public class TaskController {
     public Map<String, Task> getAllTasks() {
         return taskServices.getAllTasks();
     }
+
+    @RequestMapping(value = "/finishedlist", method = RequestMethod.GET)
+    public Map<String, Task> getFinishedTasks() {
+        return taskServices.getFinishedTasks();
+    }
+
+    @RequestMapping(value = "/finishedlist", method = RequestMethod.POST)
+    public Map<String, Task> getFinishedTasksPost() {
+        return taskServices.getFinishedTasks();
+    }
+
+    @RequestMapping(value ="/remove", method = RequestMethod.POST)
+    public void removeTask(@RequestParam(value="task_id", defaultValue = "0") String task_id){
+        System.out.println("This is the task to be removed");
+        taskServices.removeTask(task_id);
+
+    }
 }

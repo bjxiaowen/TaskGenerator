@@ -4,7 +4,8 @@
     "instance": 1,
     "task_id": "50",
     "name": "Nap Time",
-    "description": "Kiddies need to sleep"
+    "description": "Kiddies need to sleep",
+    "status" : "Open"
   },
     
   "02": {
@@ -12,7 +13,8 @@
     "instance": 1,
     "task_id": "51",
     "name": "Lunch Time",
-    "description": "Kiddies need feed"
+    "description": "Kiddies need feed",
+    "status" : "Open"
   },
     
   "03": {
@@ -20,7 +22,8 @@
     "instance": 1,
     "task_id": "52",
     "name": "Study Time",
-    "description": "How do I reach these kids?"
+    "description": "How do I reach these kids?",
+    "status" : "Open"
   },
 
   "04": {
@@ -28,7 +31,8 @@
     "instance": 5,
     "task_id": "68",
     "name": "Lunch Time",
-    "description": "Kiddies need feed"
+    "description": "Kiddies need feed",
+    "status" : "Open"
   },
     
   "05": {
@@ -36,7 +40,8 @@
     "instance": 5,
     "task_id": "69",
     "name": "Study Time",
-    "description": "How do I reach these kids?"
+    "description": "How do I reach these kids?",
+    "status" : "Open"
   }
 
 }

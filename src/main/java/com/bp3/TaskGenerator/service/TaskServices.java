@@ -20,4 +20,11 @@ public class TaskServices {
         return taskDatabase.getAllTasks();
     }
 
+    public Map<String, Task> getFinishedTasks(){
+        return taskDatabase.getFinishedTasks();
+    }
+
+    public void removeTask(String task_ID){
+        taskDatabase.removeTask(task_ID);
+    }
 }
